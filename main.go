@@ -140,7 +140,7 @@ func main() {
 	r.HandleFunc("/books/{id}", updateBook).Methods("PUT")
 	r.HandleFunc("/books/{id}", deleteBook).Methods("DELETE")
 
-	//  Route handles & endpoints clients
+	//  Route handles & endpoints members
 	r.HandleFunc("/members", getMembers).Methods("GET")
 	r.HandleFunc("/members/{id}", getMember).Methods("GET")
 	r.HandleFunc("/members/{id}", deleteMember).Methods("DELETE")
